@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+    <p><a href="./index.html">Volver al inicio</a></p> <hr>
+    <h1>Encuesta sobre ropa deportiva</h1>
+    <form >
+      <p>
+            <label for="texto">¿Cuál es tu marca de ropa deportiva favorita? </label> <br>
+            <input id="texto" type="text" placeholder="escribe aquí un texto" required>
+        </p>
+        <p>
+           
+            <label for="opciones">¿Cuántos productos por año compras de esta marca?</label> <br>
+            <input title="opcion1" name="opciones" value="1" id="opcion1" type="radio"> Entre uno y cinco</label> <br>
+            <input title="opcion2" name="opciones" value="2" id="opcion2" type="radio"> Entre seis y diez</label> <br>
+            <input title="opcion3" name="opciones" value="3" id="opcion3" type="radio"> Entre once y quince</label> <br>
+            <input title="opcion5" name="opciones" value="5" id="opcion5" type="radio" checked> Más de quince</label>
+
+        </p>
+        <p>
+            <label for="opciones">¿Cómo puntuarías la calidad de los productos de esa marca?</label> <br>
+            <input title="opcion1" name="opciones" value="1" id="opcion1" type="radio"> Excelente
+            <input title="opcion2" name="opciones" value="2" id="opcion2" type="radio"> Muy buena
+            <input title="opcion3" name="opciones" value="3" id="opcion3" type="radio"> Buena
+            <input title="opcion4" name="opciones" value="4" id="opcion4" type="radio"> Regular
+            <input title="opcion5" name="opciones" value="5" id="opcion5" type="radio"> Mala
+            <input title="opcion6" name="opciones" value="6" id="opcion6" type="radio" checked> Muy mala
+        </p> <br>
+
+        <p>
+            <label for="opciones">¿Cómo describirías la relación precio-calidad de esa marca?</label> <br>
+            <input title="opcion1" name="opciones" value="1" id="opcion1" type="radio"> Excelente
+            <input title="opcion2" name="opciones" value="2" id="opcion2" type="radio"> Muy buena
+            <input title="opcion3" name="opciones" value="3" id="opcion3" type="radio"> Buena
+            <input title="opcion4" name="opciones" value="4" id="opcion4" type="radio"> Regular
+            <input title="opcion5" name="opciones" value="5" id="opcion5" type="radio"> Mala
+            <input title="opcion6" name="opciones" value="6" id="opcion6" type="radio" checked> Muy mala
+        </p> <br>
+
+        <!---/2--->
+
+     <p>
+            <label for="opciones">¿Cada cuanto tiempo cambias tus zapatillas deportivas?</label> <br>
+            <input title="opcion1" name="opciones" value="1" id="opcion1" type="radio"> 6 meses
+            <input title="opcion2" name="opciones" value="2" id="opcion2" type="radio"> 12 meses
+            <input title="opcion3" name="opciones" value="3" id="opcion3" type="radio"> 18 meses
+            <input title="opcion4" name="opciones" value="4" id="opcion4" type="radio"> 3 años
+            <input title="opcion5" name="opciones" value="5" id="opcion5" type="radio"> 4 años
+            <input title="opcion6" name="opciones" value="6" id="opcion6" type="radio" checked> 5 años o más
+        </p> <br>
+
+        <p>
+            <label for="opciones">¿Qué tipo de prendas deportivas compras con más frecuencia?</label> <br>
+            <input title="opcion1" name="opciones" value="1" id="opcion1" type="radio"> Zapatos
+            <input title="opcion2" name="opciones" value="2" id="opcion2" type="radio"> Sudaderas
+            <input title="opcion3" name="opciones" value="3" id="opcion3" type="radio"> Chandals
+            <input title="opcion4" name="opciones" value="4" id="opcion4" type="radio"> Pantalones
+            <input title="opcion5" name="opciones" value="5" id="opcion5" type="radio"> Shorts
+            <input title="opcion5" name="opciones" value="5" id="opcion5" type="radio"> Ropa interior
+            <input title="opcion5" name="opciones" value="5" id="opcion5" type="radio"> Trajes de baño
+            <input title="opcion6" name="opciones" value="6" id="opcion6" type="radio" checked>Otros
+        </p> <br>
+
+        <p>
+            <label for="opciones">¿Cuánto dinero gastas en prendas deportivas por año?</label> <br> 
+        
+                <label for="numero"></label>
+                <input id="numero" type="number"  min="0" max="1000000000"> euros
+
+        </p>
+        
+        <!-----SELECCIONAR OPCIONES-->
+        <p>
+            <label for="texto">¿Tienes algunas otras marcas favoritas? ¿Cuáles? </label> <br>
+            <input id="texto" type="text" placeholder="escribe aquí un texto" required>
+        </p>
+
+        <p>
+            <label for="DataList">¿Por qué eliges una marca?</label> <br>
+            <input id="DataList" type="text" list="dataListClientes">
+            <datalist id="dataListClientes">
+                <option data-posicion="1" value="Por la estética de los productos">
+                <option data-posicion="2" value="Por la calidad de los productos">
+                <option data-posicion="3" value="Por la comodidad que ofrecen los productos">
+                    <option data-posicion="4" value="Por el precio">
+                        <option data-posicion="5" value="Otros">
+            </datalist>
+        </p>
+         <p>
+           <label for="opciones">¿Crees que las mejore marcas son aquellas más conocidas o que tienen mayor publicidad?</label> <br>
+            <input title="opcion1" name="opciones" value="1" id="opcion1" type="radio">Sí</label> &nbsp;
+            <input title="opcion2" name="opciones" value="2" id="opcion2" type="radio">No</label> &nbsp;
+            <input title="opcion5" name="opciones" value="5" id="opcion5" type="radio" checked>No lo sé</label>
+
+        </p>
+        <p>
+            <button>Enviar</button>
+        </p>
+    </form>
+    
+</body>
+</html>
